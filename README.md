@@ -12,7 +12,7 @@ We will store the sources in GitHub at:  ????
 
 This we want to do:
   create a recipe - which is just a text file for now
-	get a list of recipes
+	get a list of recipes...
 	display the recipe
 	edit recipes
 	delete recipes
