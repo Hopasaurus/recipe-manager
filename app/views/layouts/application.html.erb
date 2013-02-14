@@ -7,8 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="header">
+		<div class="content">
+			<h1>The Most Awesome Recipe Manager!</h1>
+			<div class="nav">
 
-<%= yield %>
+				<ul>
+					<li>
+					<%= link_to "Home", root_path %>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrapper">
+
+		<%= yield %>
+
+	</div>
 
 </body>
 </html>

@@ -1,3 +1,28 @@
 // Place all the styles related to the Recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+tr {
+	background-color: #eee;
+}
+
+$tdpadding: 10px;
+td {
+	padding-left: $tdpadding;
+	padding-right: $tdpadding;
+}
+
+#title {
+	font-size:2ex;
+	color: #F34;
+}
+
+.field {
+	background-color: #0ff;
+}
+
+#recipe_ingredients {
+	background-color: #aaa;
+}
+
+
+
