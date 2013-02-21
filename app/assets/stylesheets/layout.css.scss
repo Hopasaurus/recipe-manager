@@ -1,0 +1,56 @@
+$crimson: #992233;
+$content_width: 800px;
+$white: #ffffff;
+
+html, body {
+	height: 100%;
+	width: 100%;
+	vertical-align: baseline;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0 none;
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	width: 100%;
+	height: 60px;
+	padding-top: 20px;
+	background-color: $crimson;
+	vertical-align: baseline;
+
+	h1{float: left;}
+	div.nav{
+		float: right;
+		ul {
+			list-style: none;
+			li {
+				a {
+					font-size: 1.5ex;
+					color: $white;
+					&:visited {
+						color: #ddd;
+					}
+				}
+			}
+		}
+	}
+}
+
+.content {
+	width: $content_width;
+	margin: 0 auto;
+}
+
+#wrapper {
+	width: $content_width;
+	margin: 0 auto;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	font: 13px/1.5 'Helvetica Neue',Arial,'Liberation Sans',FreeSans,sans-serif;
+}

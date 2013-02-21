@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<p id="title">
   <b>Title:</b>
   <%= @recipe.title %>
 </p>
@@ -15,6 +15,10 @@
   <%= @recipe.instructions %>
 </p>
 
+<p>
+  <b>Image:</b>
+  <%= link_to @recipe.image_link, "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR--xISsvmL9BCb0xZiX6526ND2SgdoOuI-iGr5UkYhZPCGMIIUyQ" %>
+</p>
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>
