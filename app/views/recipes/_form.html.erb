@@ -27,6 +27,12 @@
     <%= f.label :image_link %><br />
     <%= f.text_field :image_link %>
   </div>
+	<div class="field">
+		<br/>
+		<%= image_tag @recipe.image_link.url(:medium) %>
+		<br/>
+		<%= f.file_field :image_link %>
+	</div>
   <div class="actions">
     <%= f.submit %>
   </div>
