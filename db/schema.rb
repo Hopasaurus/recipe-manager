@@ -11,15 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130214173003) do
+ActiveRecord::Schema.define(:version => 20130221162806) do
 
   create_table "recipes", :force => true do |t|
     t.string   "title"
     t.text     "ingredients"
     t.text     "instructions"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
     t.string   "image_link"
+    t.string   "image_link_file_name"
+    t.string   "image_link_content_type"
+    t.integer  "image_link_file_size"
+    t.datetime "image_link_updated_at"
   end
 
 end

@@ -1,4 +1,4 @@
-<h1>Listing recipes</h1>
+<h2>Listing recipes</h2>
 
 <table>
   <tr>
@@ -12,11 +12,11 @@
   </tr>
 
 <% @recipes.each do |recipe| %>
-  <tr>
+	<tr class="<%= cycle('even','odd') -%>">
     <td><%= recipe.title %></td>
     <td><%= recipe.ingredients %></td>
     <td><%= recipe.instructions %></td>
-		<td><%= recipe.image_link %></td>
+		<td><%= image_tag recipe.image_link.url(:thumb) %></td>
     <td><%= link_to 'Show', recipe %></td>
     <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
     <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
