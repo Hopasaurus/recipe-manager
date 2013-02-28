@@ -1,8 +1,43 @@
 // Place all the styles related to the Recipes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$softblue: #6678b1;
+table {
+	color: $softblue;
+	border-spacing: 0;
+}
+
+th {
+	border-bottom-color: $softblue;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+td, th {
+	padding: 3px;
+}
+
+
+td {
+	border: 0;
+	outline: 0;
+}
+
 tr {
-	background-color: #eee;
+	border: 0 0 1px 0 solid #ccc;
+	/*border-bottom-color: #ccc;*/
+	/*border-bottom-style: solid;*/
+	/*border-bottom-width: 1px;*/
+
+	&.even {
+		background-color: rgb(232,237,255);
+	}
+	&.odd {
+		background-color: rgb(240,242,252);
+	}
+	&:hover {
+		background-color: rgb(250,251,255);
+	}
 }
 
 $tdpadding: 10px;
@@ -17,11 +52,11 @@ td {
 }
 
 .field {
-	background-color: #0ff;
+	/*background-color: #0ff;*/
 }
 
 #recipe_ingredients {
-	background-color: #aaa;
+	/*background-color: #aaa;*/
 }
 
 
